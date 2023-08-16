@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReceptenApp</string>
+    <string name="title_activity_login">AanmeldActiviteit</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Wachtwoord</string>
+    <string name="action_sign_in">Aanmelden of registreren</string>
+    <string name="action_sign_in_short">Aanmelden</string>
+    <string name="welcome">"Welkom !"</string>
+    <string name="invalid_username">Ongeldige gebruikersnaam</string>
+    <string name="invalid_password">Wachtwoord moet meer dan 5 tekens bevatten</string>
+    <string name="login_failed">"Aanmelden mislukt"</string>
+    <string name="name_of_the_recipe">Naam van het recept</string>
+    <string name="name">Naam</string>
+    <string name="ingredi_nts_needed">Benodigde ingrediënten</string>
+    <string name="ingredi_nts">Ingrediënten</string>
+    <string name="steps_to_follow">Te volgen stappen</string>
+    <string name="steps">Stappen</string>
+    <string name="name_of_the_recipe_s_author">Naam van de auteur van het recept</string>
+    <string name="author">Auteur</string>
+    <string name="submit">Bevestigen</string>
+    <string name="update">Opslaan</string>
+    <string name="delete">Verwijder</string>
+    <string name="attention">Aandacht</string>
+    <string name="back_button">Terug</string>
+    <string name="delete_question">Ben je zeker dat je wil verwijderen?</string>
+    <string name="no_recipe_description">Oops!\nGeen recepten gevonden.\nduw op + om recepten toe te voegen.</string>
+    <string name="edit_recipe">Pas recept aan</string>
+    <string name="recipe">Recept</string>
+    <string name="recipe_entry_title">Recept toevoegen</string>
+    <string name="recipe_detail_title">Recept inhoud</string>
+    <string name="no">Nee</string>
+    <string name="save_action">Opslaan</string>
+    <string name="yes">Ja</string>
+    <string name="required_fields">*verplichte velden</string>
+    <string name="recipe_name_req">Recept Naam*</string>
+    <string name="recipe_ingredients_req">Recept Ingredienten*</string>
+    <string name="recipe_steps_req">Recept Stappen*</string>
+    <string name="recipe_author_req">Recept Auteur*</string>
+</resources>
