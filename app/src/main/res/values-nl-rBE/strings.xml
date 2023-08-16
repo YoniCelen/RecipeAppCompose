@@ -24,7 +24,7 @@
     <string name="attention">Aandacht</string>
     <string name="back_button">Terug</string>
     <string name="delete_question">Ben je zeker dat je wil verwijderen?</string>
-    <string name="no_recipe_description">Oops!\nGeen recepten gevonden.\nduw op + om recepten toe te voegen.</string>
+    <string name="no_recipe_description">Geen recepten gevonden.\nduw op (+) om recepten toe te voegen.</string>
     <string name="edit_recipe">Pas recept aan</string>
     <string name="recipe">Recept</string>
     <string name="recipe_entry_title">Recept toevoegen</string>

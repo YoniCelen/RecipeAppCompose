@@ -102,7 +102,7 @@ private fun HomeBody(
     ) {
         if (recipeList.isEmpty()) {
             Text(
-                text = stringResource(R.string.name),
+                text = stringResource(R.string.no_recipe_description),
                 textAlign = TextAlign.Center,
                 style = MaterialTheme.typography.titleLarge
             )

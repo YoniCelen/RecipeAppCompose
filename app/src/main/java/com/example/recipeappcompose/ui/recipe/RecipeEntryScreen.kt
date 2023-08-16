@@ -124,9 +124,9 @@ fun RecipeInputForm(
             singleLine = true
         )
         OutlinedTextField(
-            value = recipeDetails.name,
+            value = recipeDetails.ingredients,
             onValueChange = { onValueChange(recipeDetails.copy(ingredients = it)) },
-            label = { Text(stringResource(R.string.recipe_name_req)) },
+            label = { Text(stringResource(R.string.recipe_ingredients_req)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
@@ -137,9 +137,9 @@ fun RecipeInputForm(
             singleLine = true
         )
         OutlinedTextField(
-            value = recipeDetails.name,
+            value = recipeDetails.steps,
             onValueChange = { onValueChange(recipeDetails.copy(steps = it)) },
-            label = { Text(stringResource(R.string.recipe_name_req)) },
+            label = { Text(stringResource(R.string.recipe_steps_req)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
@@ -150,9 +150,9 @@ fun RecipeInputForm(
             singleLine = true
         )
         OutlinedTextField(
-            value = recipeDetails.name,
+            value = recipeDetails.author,
             onValueChange = { onValueChange(recipeDetails.copy(author = it)) },
-            label = { Text(stringResource(R.string.recipe_name_req)) },
+            label = { Text(stringResource(R.string.recipe_author_req)) },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
                 unfocusedContainerColor = MaterialTheme.colorScheme.secondaryContainer,
