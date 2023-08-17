@@ -12,18 +12,22 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -39,6 +43,7 @@ import com.example.recipeappcompose.ui.AppViewModelProvider
 import com.example.recipeappcompose.ui.navigation.NavigationDestination
 import com.example.recipeappcompose.ui.theme.RecipeAppComposeTheme
 import com.example.recipeappcompose.R
+import kotlinx.coroutines.launch
 
 object HomeDestination : NavigationDestination {
     override val route = "home"
@@ -59,6 +64,7 @@ fun HomeScreen(
 ) {
     val homeUiState by viewModel.homeUiState.collectAsState()
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val coroutineScope = rememberCoroutineScope()
 
     Scaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
@@ -81,6 +87,19 @@ fun HomeScreen(
                 )
             }
         },
+        bottomBar = {
+            OutlinedButton(
+                onClick = {
+                    coroutineScope.launch {
+                        viewModel.addRandomRecipeFromApi()
+                    }
+                          },
+                shape = MaterialTheme.shapes.small,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(stringResource(R.string.recipe_add_random))
+            }
+        }
     ) { innerPadding ->
         HomeBody(
             recipeList = homeUiState.recipeList,

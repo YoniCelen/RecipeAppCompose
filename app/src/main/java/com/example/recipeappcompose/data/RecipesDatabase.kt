@@ -9,7 +9,7 @@ import com.example.recipeappcompose.data.model.Recipe
 /**
  * Database class with a singleton Instance object.
  */
-@Database(entities = [Recipe::class], version = 1, exportSchema = false)
+@Database(entities = [Recipe::class], version = 2, exportSchema = false)
 abstract class RecipesDatabase : RoomDatabase() {
 
     abstract fun recipeDao(): RecipeDao

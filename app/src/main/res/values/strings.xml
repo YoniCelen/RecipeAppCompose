@@ -36,4 +36,5 @@
     <string name="recipe_ingredients_req">Recipe Ingredients*</string>
     <string name="recipe_steps_req">Recipe Steps*</string>
     <string name="recipe_author_req">Recipe Author*</string>
+    <string name="recipe_add_random">Add random recipe</string>
 </resources>
